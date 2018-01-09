@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--引入main.css-->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="files/css/font-awesome.min.css">
+</head>
+<body>
+<!--header2部分-->
+<div class="header2_father">
+    <div class="header2">
+        <a href="">罗蒙男装</a>
+    </div>
+</div>
+<!--banner部分-->
+<div class="banner">
+    <div class="banner1">
+        <img src="img/banner1.jpg" alt="">
+    </div>
+    <div class="banner2">
+        <img src="img/banner2.jpg" alt="">
+    </div>
+    <div class="banner3">
+        <img src="img/banner3.jpg" alt="">
+    </div>
+
+</div>
+<!--main1部分-->
+<div class="main1">
+    <!--main1_one部分-->
+    <div class="main1_one">
+        <img src="img/main1_one.jpg" alt="">
+    </div>
+    <!--main1_two部分-->
+    <div class="main1_two">
+        <div id="lun1">
+            <ul>
+                <li class="active" id="a">
+                    <img src="img/main1_two.jpg" alt=""></li>
+                <li><img src="img/main1_three.jpg" alt=""></li>
+                <li><img src="img/main1_four.jpg" alt=""></li>
+                <li><img src="img/main1_five.jpg" alt=""></li>
+                <li><img src="img/main1_six.jpg" alt=""></li>
+                <li><img src="img/main1_seven.jpg" alt=""></li>
+                <li><img src="img/main1_eight.jpg" alt=""></li>
+                <li><img src="img/main1_nine.jpg" alt=""></li>
+            </ul>
+            <div id="num_list">
+                <ul>
+                    <li><span class="active_num">1</span></li>
+                    <li><span>2</span></li>
+                    <li><span>3</span></li>
+                    <li><span>4</span></li>
+                    <li><span>5</span></li>
+                    <li><span>6</span></li>
+                    <li><span>7</span></li>
+                    <li><span>8</span></li>
+                </ul>
+            </div>
+            <a href="###" class="left btn" id="leftbtn">&lt;</a>
+            <a href="###" class="right btn" id="rightbtn">&gt;</a>
+        </div>
+    </div>
+    <!--main1_three部分-->
+    <div class="main1_three">
+        <img src="img/main2_one.jpg" alt="">
+    </div>
+    <!--main1_four部分-->
+    <div class="main1_four">
+        <div class="">
+            <img src="img/main2_two.jpg" alt="">
+        </div>
+        <div class="main1_four_one">
+            <img src="img/main2_three.jpg" alt="">
+        </div>
+        <div class="main1_four_one">
+            <img src="img/main2_four.jpg" alt="">
+        </div>
+    </div>
+    <!--main1_five部分-->
+    <div class="main1_five">
+        <img src="img/one.jpg" alt="">
+    </div>
+    <!--main1_six部分-->
+    <div class="main1_six">
+        <a href="javascript:;">
+            <dl>
+                <dt class="dt1"></dt>
+                <dd>
+                    <h4>什么样的男装最经得起时间的考验 罗蒙男装品牌值得你拥有</h4>
+                    <p>高级男装，品牌男装<span>01-08</span></p>
+                </dd>
+            </dl>
+        </a>
+        <a href="javascript:;">
+            <dl>
+                <dt class="dt2"></dt>
+                <dd>
+                    <h4>年轻男士的冬装穿搭 罗蒙携手林志颖告诉你</h4>
+                    <p>男士冬装，男士冬装搭配<span>01-04</span></p>
+                </dd>
+            </dl></a>
+        <a href="javascript:;">
+            <dl>
+                <dt class="dt3"></dt>
+                <dd>
+                    <h4>魅力品牌 恭喜罗蒙男装加盟新店与四川隆重开业</h4>
+                    <p>男装店开业，男装加盟店<span>12-29</span></p>
+                </dd>
+            </dl></a>
+        <a href="javascript:;">
+            <dl>
+                <dt class="dt4"></dt>
+                <dd>
+                    <h4>喜讯|恭喜罗蒙又一家千万级标杆店-上海京华路店盛大开业</h4>
+                    <p>男装店开业<span>12-22</span></p>
+                </dd>
+            </dl></a>
+        <a href="javascript:;">
+            <dl>
+                <dt class="dt5"></dt>
+                <dd>
+                    <h4>喜讯|祝贺罗蒙集团董事长盛静生荣获“2017年度先锋人物”</h4>
+                    <p>董事长，荣获<span>12-21</span></p>
+                </dd>
+            </dl>
+        </a>
+    </div>
+</div>
+<!--footer1部分-->
+<div class="footer1_father">
+<div class="footer1">
+    <a class="fa fa-star-o" href=""><span>收藏品牌</span></a>
+    <a href="">品牌介绍</a>
+    <a href="">品牌款式</a>
+    <a class="zaixian" href="">在线咨询</a>
+</div>
+</div>
+<!--引入flexible插件-->
+<script src="js/flexible.js"></script>
+<script src="js/flexible_css.js"></script>
+<script>
+    var lun1=document.querySelector('#lun1');
+    var lis = document.getElementById('lun1').firstElementChild.children;
+    var num_list=document.getElementById('lun1').firstElementChild.nextElementSibling.firstElementChild.children;
+    var i=0;
+    var timer=null;
+    //轮播函数
+    function run(){
+        //间隔一秒钟，执行一次
+        timer=setInterval(function(){
+            lis[i].removeAttribute('class');
+            num_list[i].firstElementChild.removeAttribute('class');
+            i++;
+            if(i>=lis.length){
+                i=0;
+            }
+            lis[i].setAttribute('class','active');
+            num_list[i].firstElementChild.setAttribute('class','active_num');
+        },2000);
+    }
+    run();
+    //鼠标移入停止
+    lun1.onmouseover=function(){
+        clearInterval(timer);
+    };
+    //鼠标移出继续轮播
+    lun1.onmouseout=function(){
+        run();
+    };
+
+    //鼠标移动到小圆圈上的时候，显示对应的图片
+    for(var j=0;j<num_list.length;j++){
+        num_list[j].index = j;
+        num_list[j].onmouseover=function(){
+            //clearInterval(timer);
+            lis[i].removeAttribute('class');
+            num_list[i].firstElementChild.removeAttribute('class');
+
+            i=this.index;
+
+            lis[i].setAttribute('class','active');
+            num_list[i].firstElementChild.setAttribute('class','active_num');
+        }
+    }
+
+    //向左按钮
+    document.getElementById("leftbtn").onclick = function(){
+        lis[i].removeAttribute('class');
+        num_list[i].firstElementChild.removeAttribute('class');
+        if(i==0){
+            i=num_list.length-1;
+        }else{
+            i = i-1;
+        }
+        lis[i].setAttribute('class','active');
+        num_list[i].firstElementChild.setAttribute('class','active_num');
+    };
+    //向右按钮
+    document.getElementById("rightbtn").onclick = function(){
+        lis[i].removeAttribute('class');
+        num_list[i].firstElementChild.removeAttribute('class');
+        if(i==num_list.length-1){
+            i=0;
+        }else{
+            i = i+1;
+        }
+        lis[i].setAttribute('class','active');
+        num_list[i].firstElementChild.setAttribute('class','active_num');
+    }
+</script>
+</body>
+</html>
