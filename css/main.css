@@ -1249,7 +1249,7 @@ p.border1{
 [data-dpr="3"] .log_gong label{
     font-size: 36px;
 }
-.log_gong input{
+.log_gong input[type="text"]{
     border:1px solid #ccc;
     width: 6rem;
     height: 0.9rem;
@@ -1266,7 +1266,7 @@ p.border1{
 .log_three{
     margin-top: 0.7rem;
 }
-.log_three input{
+.log_three input[type="text"]{
     width: 2.5rem;
 }
 .log_four{
@@ -1284,14 +1284,14 @@ p.border1{
 [data-dpr="3"] .log_four label{
     font-size: 36px;
 }
-.log_four label input{
+.log_four label input[type="checkbox"]{
+    width: 0.35rem;
+    height: 0.35rem;
     float: left;
-    width: 0.3rem;
-    height: 0.3rem;
     border:1px solid #afafaf;
     background: #e8e8e8;
-    border-radius: 0.05rem;
-    margin-top: 0.1rem;
+    border-radius: 0.15rem;
+    margin-top: 0.05rem;
     margin-right: 0.2rem;
 }
 .log_four a{
@@ -1304,7 +1304,7 @@ p.border1{
 [data-dpr="3"] .log_four a{
     font-size: 36px;
 }
-.log_five input{
+.log_five input[type="submit"]{
     text-align: center;
     width: 2.2rem;
     height: 0.9rem;
@@ -1317,13 +1317,13 @@ p.border1{
     cursor:pointer;
     font-size: 12px;
 }
-[data-dpr="2"] .log_five input{
+[data-dpr="2"] .log_five input[type="submit"]{
     font-size: 24px;
 }
-[data-dpr="3"] .log_five input{
+[data-dpr="3"] .log_five input[type="submit"]{
     font-size: 36px;
 }
-.log_five input:hover{
+.log_five input[type="submit"]:hover{
     background-color: #d2322d;
 }
 /*log_2部分*/
@@ -1349,6 +1349,21 @@ p.border1{
 .log_bottom_in{
     margin-left: 1rem;
     margin-bottom: 0.3rem;
+}
+.log_bottom_in a:nth-of-type(1){
+    display: inline-block;
+    width: 2.2rem;
+    height: 0.8rem;
+}
+.log_bottom_in a:nth-of-type(2){
+    display: inline-block;
+    width: 1.9rem;
+    height: 0.8rem;
+}
+.log_bottom_in a:nth-of-type(3){
+    display: inline-block;
+    width: 3rem;
+    height: 0.8rem;
 }
 .log_bottom_in img.img1{
     width: 2.2rem;
@@ -1412,15 +1427,278 @@ p.border1{
     margin:0 auto;
     padding:0.25rem;
 }
-.zhuce1_in{
-    border-left:1px solid #ccc;
+.zhuce1 a:hover{
+    text-decoration: none;
+}
+.xian{
+    border:1px solid #ccc;
 }
 .zhuce1_top{
-    border-bottom:1px solid #ccc;
+    height: 1rem;
+    background: #fff;
 }
 .zhuce1_top a{
-    border: 1px solid #ccc;
+    float: left;
     border-bottom:1px solid #fff;
-    border-left:0;
-    line-height: 0.35rem;
+    height: 1rem;
+    width: 4rem;
+    line-height: 1rem;
+    display: inline-block;
+    text-align: center;
+    color: #000000;
+    font-weight:bold;
+    font-size: 14px;
 }
+[data-dpr="2"] .zhuce1_top a{
+    font-size: 28px;
+}
+[data-dpr="3"] .zhuce1_top a{
+    font-size: 42px;
+}
+.zhuce1_top span{
+    float: left;
+    display: block;
+    width: 5.5rem;
+    height: 1rem;
+    border-bottom:1px solid #ccc;
+}
+.zhuce1_bottom{
+    border-top:0;
+    padding-top: 0.25rem;
+    padding-bottom: 0.5rem;
+}
+.tong{
+    margin-top: 0.55rem;
+    margin-bottom: 0.8rem;
+}
+.tong label{
+    width: 3rem;
+    float: left;
+    text-align: right;
+    margin-right: 0.2rem;
+    height: 0.7rem;
+    line-height: 0.7rem;
+    font-size: 12px;
+}
+[data-dpr="2"] .tong label{
+    font-size: 24px;
+}
+[data-dpr="3"] .tong label{
+    font-size: 36px;
+}
+.tong input[type="text"]{
+    width: 4.5rem;
+    height: 0.7rem;
+    border:1px solid #ccc;
+    padding: 0.2rem 0.3rem;
+    border-radius:0.125rem;
+}
+.zhuce1_four input[type="text"]{
+    width: 1.5rem;
+}
+.zhuce1_five input[type="text"]{
+    width: 3rem;
+}
+.zhuce1_six{
+    margin-left: 1rem;
+}
+.zhuce1_six span:nth-of-type(1){
+    font-size: 12px;
+}
+[data-dpr="2"] .zhuce1_six span:nth-of-type(1){
+    font-size: 24px;
+}
+[data-dpr="3"] .zhuce1_six span:nth-of-type(1){
+    font-size: 36px;
+}
+.zhuce1_six span:nth-of-type(2){
+    margin-left: 0.125rem;
+}
+.zhuce1_six a{
+    color: #999999;
+    font-size: 12px;
+}
+[data-dpr="2"] .zhuce1_six a{
+    font-size: 24px;
+}
+[data-dpr="3"] .zhuce1_six a{
+    font-size: 36px;
+}
+.zhuce1_six input[type="checkbox"]{
+    width: 0.3rem;
+    height: 0.3rem;
+    margin-top: 0.05rem;
+    margin-right: 0.2rem;
+}
+.zhuce1_seven{
+    margin-left: 2.5rem;
+}
+.zhuce1_seven input[type="submit"]{
+    width: 2.5rem;
+    height: 1rem;
+    color: #ffffff;
+    background-color: #d9534f;
+    border:none;
+    border-radius:0.125rem;
+    text-align: center;
+    cursor:pointer;
+}
+.zhuce1_seven input[type="submit"]:hover{
+    color: #ffffff;
+    background-color: #d2322d;
+}
+.zhuce1_seven a{
+    color: #000;
+    margin-left: 0.5rem;
+}
+/*第六页*/
+/*person部分*/
+.person{
+    width: 10rem;
+    margin:0 auto;
+}
+.person a:hover{
+    text-decoration: none;
+}
+/*person_one部分*/
+.person_one{
+    text-align: center;
+    padding:0.25rem 0;
+    background: #00a1e9;
+    margin-bottom: 0.5rem;
+}
+.person_one span{
+    font-size: 16px;
+    color: #ffffff;
+}
+[data-dpr="2"] .person_one span{
+    font-size: 32px;
+}
+[data-dpr="3"] .person_one span{
+    font-size: 48px;
+}
+/*person_two部分*/
+.person_two{
+    width: 10rem;
+    margin-bottom: 0.7rem;
+}
+.person_two a{
+    width: 3rem;
+    height: 0.9rem;
+    line-height: 0.9rem;
+    text-align: center;
+    background: #00a1e9;
+    border-radius: 0.5rem;
+    color: #ffffff;
+    font-size: 12px;
+}
+.person_two a:nth-of-type(1){
+    float: left;
+    margin-left: 1rem;
+}
+.person_two a:nth-of-type(2){
+    float: right;
+    margin-right: 1rem;
+}
+[data-dpr="2"] .person_two a{
+    font-size: 24px;
+}
+[data-dpr="3"] .person_two a{
+    font-size: 36px;
+}
+/*person_three部分*/
+.person_gong{
+    width: 10rem;
+    padding-left: 0.32rem;
+}
+.person_a{
+    display: block;
+    height: 1.5rem;
+    line-height: 1.5rem;
+}
+.person_a p{
+    width: 0.7rem;
+    height: 0.7rem;
+    font-size: 0.5rem;
+    color: #ffffff;
+    text-align: center;
+    line-height: 0.7rem;
+}
+.person_div{
+    width: 0.7rem;
+    margin-right: 0.25rem;
+}
+.person_a div{
+    float: left;
+}
+.person_left{
+    float: left;
+    width: 0.6rem;
+}
+.person_xian{
+    width: 8.73rem;
+    float: right;
+    border-bottom:1px solid #e7e7e7;
+}
+.person_xian h1{
+    font-size: 16px;
+    color: #444444;
+}
+[data-dpr="2"] .person_xian h1{
+    font-size: 32px;
+}
+[data-dpr="3"] .person_xian h1{
+    font-size: 48px;
+}
+.person_xian_left{
+    width: 5.9rem;
+    float: left;
+}
+.person_xian_right{
+    width: 2.83rem;
+    float: right;
+    color: #999999;
+    font-size: 12px;
+}
+[data-dpr="2"] .person_xian_right{
+    font-size: 24px;
+}
+[data-dpr="3"] .person_xian_right{
+    font-size: 36px;
+}
+.person_xian_left1{
+    width: 8.23rem;
+    float: left;
+}
+.person_xian_right1{
+    width: 0.5rem;
+    float: right;
+    color: #999999;
+    font-size: 12px;
+}
+[data-dpr="2"] .person_xian_right1{
+    font-size: 24px;
+}
+[data-dpr="3"] .person_xian_right1{
+    font-size: 36px;
+}
+.person_three{
+    border-top:1px solid #e7e7e7;
+}
+.person_three .dingdan{
+    margin-right: 0.1rem;
+}
+p.person_background{
+    background: #5090cd;
+}
+p.person_background1{
+    background: #e7a200;
+}
+p.person_background2{
+    background: #e64c2e;
+}
+p.person_background3{
+    background: #00aeef;
+}
+/*person_four部分*/
+/*person_five部分*/

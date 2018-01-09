@@ -8,42 +8,43 @@
 </head>
 <body>
 <div class="zhuce1">
-    <div class="zhuce1_in">
         <div class="zhuce1_top">
-            <a href="">使用手机号码注册</a>
+            <a class="xian" href="javascript:;">使用手机号码注册</a>
+            <span></span>
         </div>
-        <div class="zhuce1_bottom">
-            <div class="zhuce1_one">
+        <div class="zhuce1_bottom xian">
+            <div class="zhuce1_one tong">
                 <label for="iphone">手机号：</label>
-                <input id="iphone" type="text">
+                <input id="iphone" type="text" required>
             </div>
-            <div class="zhuce1_two">
+            <div class="zhuce1_two tong">
                 <label for="password1">设定密码：</label>
-                <input id="password1" type="text">
+                <input id="password1" type="text" required>
             </div>
-            <div class="zhuce1_three">
+            <div class="zhuce1_three tong">
                 <label for="password2">确认密码：</label>
-                <input id="password2" type="text">
+                <input id="password2" type="text" required>
             </div>
-            <div class="zhuce1_four">
+            <div class="zhuce1_four tong">
                 <label for="yanzheng">验证码：</label>
                 <input id="yanzheng" type="text">
             </div>
-            <div class="zhuce1_five">
+            <div class="zhuce1_five tong">
                 <label for="iyanzheng">手机验证码：</label>
                 <input id="iyanzheng" type="text">
             </div>
-            <div class="zhuce1_six">
-                <input type="text" checked="checked">
+            <div class="zhuce1_six tong">
+                <input type="checkbox" checked="checked">
                 <span>我已经阅读并接受</span>
-                <span><a href="">《威猛男士服务条款》</a></span>
+                <span>《
+                    <a href="javascript:;">威猛男士服务条款</a>
+                    》</span>
             </div>
             <div class="zhuce1_seven">
-                <input type="text" value="提交">
-                <a href="">返回登录</a>
+                <input type="submit" value="提交">
+                <a href="log.html">返回登录</a>
             </div>
         </div>
-    </div>
 </div>
 <!--引入flexible插件-->
 <script src="js/flexible.js"></script>
