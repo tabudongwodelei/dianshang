@@ -1407,7 +1407,15 @@ p.border1{
 }
 /*第五页*/
 /*zhuce部分*/
-.zhuce{
+.zhuce1{
     width: 10rem;
     margin:0 auto;
+    padding:0.25rem;
+}
+.zhuce1_top{
+    border-bottom:1px solid #ccc;
+}
+.zhuce1_top a{
+    border: 1px solid #ccc;
+    border-bottom:1px solid #fff;
 }
