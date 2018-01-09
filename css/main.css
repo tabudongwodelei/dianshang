@@ -1412,10 +1412,15 @@ p.border1{
     margin:0 auto;
     padding:0.25rem;
 }
+.zhuce1_in{
+    border-left:1px solid #ccc;
+}
 .zhuce1_top{
     border-bottom:1px solid #ccc;
 }
 .zhuce1_top a{
     border: 1px solid #ccc;
     border-bottom:1px solid #fff;
+    border-left:0;
+    line-height: 0.35rem;
 }
