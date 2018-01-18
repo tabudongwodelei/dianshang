@@ -123,6 +123,9 @@ header a span{
     border-radius:0.2rem;
 }
 /*mainer2部分*/
+.mainer2 a:hover{
+    text-decoration: none;
+}
 /*mainer2_one部分*/
 .title{
     height: 1rem;
@@ -194,6 +197,9 @@ header a span{
     font-size: 36px;
 }
 /*mainer3部分*/
+.mainer3 a:hover{
+    text-decoration: none;
+}
 .title1{
     height: 1rem;
     line-height:0.95rem;
@@ -221,6 +227,9 @@ header a span{
     font-size: 48px;
 }
 /*mainer4部分*/
+.mainer4 a:hover{
+    text-decoration: none;
+}
 .mainer4_two{
     padding:0.3rem 0.2rem 0.2rem;
     background: #f5f5f5;
@@ -254,9 +263,15 @@ header a span{
     font-size: 48px;
 }
 /*mainer5部分*/
+.mainer5 a:hover{
+    text-decoration: none;
+}
 /*mainer6部分*/
 .mainer6{
     margin-top: 0.4rem;
+}
+.mainer6 a:hover{
+    text-decoration: none;
 }
 /*mainer6_one部分*/
 /*mainer6_two部分*/
@@ -449,6 +464,9 @@ header a span{
     border-bottom: 0.25rem solid #f6f6f6;
     z-index: 1000;
 }
+.header1 a:hover{
+    text-decoration: none;
+}
 .header1 ul{
     height: 1.3rem;
     border-bottom: 1px solid #ddd;
@@ -493,8 +511,14 @@ header a span{
     width: 10rem;
     margin:0 auto;
 }
+.shop a{
+    display: block;
+    width: 10rem;
+    height: 4.8rem;
+}
 .shop img{
     width: 100%;
+    height: 4.8rem;
 }
 .shop .shop_one{
     border-bottom: 0.3rem solid #f2f2f2;
